@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Yang Jinhong的简历</title>
+
+    <style>
+        body {
+            background:#e5e5e5;
+        }
+        body,
+        div.header {
+            font-family: arial,sans-serif;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        div.header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            min-width: 440px;
+            background: #4F4F4F;
+            color: white;
+            z-index: 10;
+        }
+        div.header h1 {
+            margin-left: 5%;
+            color: white;
+        }
+        div.myinfo {
+            float: left;
+            margin-left: 40px;
+        }
+        div.myinfo p {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            padding-left: 1.5em;
+        }
+        #img1{
+			float: right;
+        	margin-right: 0px;
+		    color: white;
+            width: 5em;		
+            /*height: 120px;*/
+			border:1px solid black;
+			
+			}
+		#img1 img{width:100%;height:100%;}
+		#music{
+			margin-right: 0px;
+		}
+        div.nav {
+            float: right;
+            margin-right: 15px;
+        }
+        div.nav li {
+            display: inline-block;
+            list-style: none;
+            position: relative;
+            background: #3498DB;
+        }
+        div.nav li:before {
+            content: '';
+            width: 16px;
+            height: 6px;
+            background: #3498DB;
+            position: absolute;
+            top: -8px;
+            left: 0;
+        }
+        div.nav li:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 16px solid #3498DB;
+            position: absolute;
+            top: 75px;
+            left: 0;
+        }
+        div.nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            width: 1em;
+        }
+        div.nav li:hover {
+            background: #cc3333;
+        }
+        div.nav li:hover:before {
+            background: #F07676;
+        }
+        div.nav li:hover:after {
+            border-top: 16px solid #f4d295;
+        }
+        div.section {
+            height: 400px;
+            padding-top: 200px;
+            position: relative;
+            color: #34495E;
+        }
+        div.section h2 {
+            margin: 0;
+            background: #3498DB;
+            padding: 20px 0;
+            padding-left: 10%;
+        }
+        div.section div.content {
+            background: white;
+            padding: 5% 0;
+        }
+        div.content p {
+            display: block;
+            margin: 0 10%;
+            border-bottom: 1px dashed #e5e5e5;
+            line-height: 2.5em;
+            color: #7F8C8D;
+        }
+        div#contact {
+            text-align: center;
+            position: relative;
+        }
+        div#contact a {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 30px;
+            color: white;
+            background: #3498DB;            
+        }
+        div#contact a:hover div.pop {
+            display: block;
+        }
+        div.pop {
+            position: absolute;
+            top: -400%;
+            margin: auto;
+            left: 0;
+            right: 0;
+            color: white;
+            background: rgba(0,0,0,.7);
+            display: none;
+            z-index: 20;
+        }
+        div.footer {
+            text-align: center;
+            color: #95A5A6;
+        }
+        div.heart {
+            width: 40px;
+            height: 40px;
+            background: #E74C3C;
+            -webkit-transform: rotate(-45deg);  
+            -moz-transform: rotate(-45deg);  
+            -ms-transform: rotate(-45deg);  
+            -o-transform: rotate(-45deg);  
+             transform: rotate(-45deg);
+            position: relative;
+            margin: 0 auto;
+        }
+        div.heart:before,
+        div.heart:after {
+            position: absolute;
+            content: '';
+            width: 40px;  
+            height: 40px;  
+            background: #E74C3C;  
+            -moz-border-radius: 20px;  
+            border-radius: 20px;    
+        }
+        div.heart:before {
+            top: -20px;
+            left: 0;
+        }
+        div.heart:after {
+            top: 0;
+            left: 20px;
+        }
+        .icon {
+            line-height: 100%;
+            width: 1em;
+            height: 1em;
+            position: relative;
+            display: inline-block;
+        }
+        .icon-person {
+            position:absolute;
+            top: 0;
+            left: .25em;
+            width: .5em;
+            height: .5em;
+            border-radius: 1em;
+            background: #2980B9;
+        }
+        .icon-person:before {
+            content: '';
+            position: absolute;
+            top: .5em;
+            left: -.25em;
+            width: 1em;
+            height: .5em;
+            border-radius: 1em 1em 0 0;
+            background: #2980B9;
+        }
+        .icon-home {
+            position: absolute;
+            top: 0;
+            left: .125em;
+            width: .25em;
+            height: .5em;
+            background-color: #2980B9; 
+        }
+        .icon-home:before,
+        .icon-home:after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+        }
+        .icon-home:before {
+            top: .5em;
+            left: 0;
+            width: .25em;
+            height: .3125em;
+            border-width: .1875em .25em 0 .25em;
+            border-color: #2980B9; 
+        }
+        .icon-home:after {
+            top: -.5em;
+            left: -.125em;
+            width: 0;
+            height: 0;
+            border-width: .5em;
+            border-color: transparent transparent #2980B9 transparent; 
+        }
+        .icon-mail {
+            position: absolute;
+            top: .15625em;
+            left: 0;
+            width: 1em;
+            height: .75em;
+            background-color: #2980B9;
+        }
+        .icon-mail:before,
+        .icon-mail:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-width: .4em .5em;
+            border-style: solid;
+        }
+        .icon-mail:before {
+            top: 0;
+            border-color: #3498DB transparent transparent transparent; 
+        }
+        .icon-mail:after {
+            top: -.0625em;
+            border-color: #2980B9 transparent transparent transparent; 
+        }
+        .icon-tag {
+            position: absolute;
+            top: 0;
+            left: .25em;
+            width: .5em;
+            height: .75em;
+            background-color: #2980B9; 
+            border-top-left-radius: .0625em;
+            border-top-right-radius: .0625em;
+        }
+        .icon-tag:before,
+        .icon-tag:after {
+            content: "";
+            position: absolute;
+            top: .75em;
+            width: 0;
+            height: 0;
+            border-width: .125em;
+            border-style: solid;
+        }
+        .icon-tag:before {
+            left: 0;
+            border-color: #2980B9 transparent transparent #2980B9; 
+        }
+        .icon-tag:after {
+            left: .25em;
+            border-color: #2980B9 #2980B9 transparent transparent; 
+        }
+        .icon-stats,
+        .icon-stats:before {
+            position: absolute;
+            width: .3125em;
+            border-width: 0 .1875em;
+            border-style: solid;
+            border-color: #2980B9; 
+        }
+        .icon-stats {
+            top: 0;
+            left: 0;
+            height: .875em;
+        }
+        .icon-stats:before {
+            content: "";
+            top: .3125em;
+            left: .0625em;
+            height: .5625em;
+        }
+        .icon-stats:after {
+            content: "";
+            position: absolute;
+            top: .875em;
+            left: -.1875em;
+            width: 1em;
+            height: .125em;
+            background-color: #2980B9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+    	<!--音乐模块
+    		autoplay="autoplay" 页面加载自动加载 去了手动加载 
+    		controls="controls" 显示控制按钮的那一栏的
+    		preload="auto"在音频在页面加载时进行加载，预备播放。如果使用 “autoplay”，则忽略该属性
+    	-->
+    	<div id="music">
+    		<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+            src="img/张信哲 - 太想爱你.mp3">
+		</audio>
+    	</div>
+
+        <h1>杨金鸿的简历</h1>
+        <div class="myinfo">
+            <p><span class="icon icon-person"></span>姓名：杨金鸿</p>
+            <p><span class="icon icon-home"></span>就读学校：福州大学</p>
+            <p><span class="icon icon-stats"></span>学院：阳光学院</p>
+            <p><span class="icon icon-tag"></span>专业：通信工程</p>
+            <p><span class="icon icon-mail"></span>邮箱：1558521716@qq.com</p>
+        </div>
+        <div id="img1">
+        	<img src="img/bai.jpg" />
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#edu">教育经历</a></li>
+                <li><a href="#skill">技能掌握</a></li>
+                <li><a href="#lang">语言能力</a></li>
+                <li><a href="#award">获奖状况</a></li>
+                <li><a href="#word">自我评价</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="artcile">
+            <div class="section" id="edu">
+                <h2>教育经历</h2>
+                <div class="content">
+                    <p>这里是内容</p>
+                    <p>条目1</p>
+                    <p>条目2</p>
+                    <p>条目3</p>
+                    <p>条目4</p>
+                </div>
+            </div>
+            <div class="section" id="skill">
+                <h2>技能掌握</h2>
+                <div class="content">
+                    <p>这里是内容</p>
+                    <p>条目1</p>
+                    <p>条目2</p>
+                    <p>条目3</p>
+                    <p>条目4</p>
+                </div>
+            </div>
+            <div class="section" id="lang">
+                <h2>语言能力</h2>
+                <div class="content">
+                    <p>这里是内容</p>
+                    <p>条目1</p>
+                    <p>条目2</p>
+                    <p>条目3</p>
+                    <p>条目4</p>
+                </div>
+            </div>
+            <div class="section" id="award">
+                <h2>获奖状况</h2>
+                <div class="content">
+                    <p>这里是内容</p>
+                    <p>条目1</p>
+                    <p>条目2</p>
+                    <p>条目3</p>
+                    <p>条目4</p>
+                </div>
+            </div>
+            <div class="section" id="word">
+                <h2>自我评价</h2>
+                <div class="content">
+                    <p>这里是内容</p>
+                    <p>条目1</p>
+                    <p>条目2</p>
+                    <p>条目3</p>
+                    <p>条目4</p>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="heart"></div>
+        <p></p>
+        
+    </div>
+    <div id="contact">
+        <a href="#" id="contact">联系方式
+            <div class="pop">
+                <p>QQ:1558521716</p>
+                <p>Stack Overflow:jinhong yang</p>
+                <p>Github:1558521716</p>
+            </div>
+        </a>    
+    </div>
+</body>
+</html>
