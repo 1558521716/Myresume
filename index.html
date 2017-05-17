@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang=zh-CN>
+
 <head>
     <meta charset="UTF-8">
 
     <title>Yang Jinhong的简历</title>
+
 
     <style>
         body {
@@ -49,6 +51,10 @@
 			}
 		#img1 img{width:100%;height:100%;}
 		#music{
+			float: right;
+			margin-top: -70px;
+		}
+		#right1{
 			margin-right: 0px;
 		}
         div.nav {
@@ -59,7 +65,7 @@
             display: inline-block;
             list-style: none;
             position: relative;
-            background: #3498DB;
+            background: #848A7C;
         }
         div.nav li:before {
             content: '';
@@ -326,20 +332,23 @@
     		autoplay="autoplay" 页面加载自动加载 去了手动加载 
     		controls="controls" 显示控制按钮的那一栏的
     		preload="auto"在音频在页面加载时进行加载，预备播放。如果使用 “autoplay”，则忽略该属性
-    	-->
-    	<div id="music">
-    		<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
-            src="img/张信哲 - 太想爱你.mp3">
-		</audio>
-    	</div>
+    	--> 
+    	
 
         <h1>杨金鸿的简历</h1>
+		<div id="music">
+    		<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+	     	   		src="img/张信哲 - 太想爱你.mp3">
+			</audio>
+		</div>
         <div class="myinfo">
             <p><span class="icon icon-person"></span>姓名：杨金鸿</p>
             <p><span class="icon icon-home"></span>就读学校：福州大学</p>
             <p><span class="icon icon-stats"></span>学院：阳光学院</p>
             <p><span class="icon icon-tag"></span>专业：通信工程</p>
-            <p><span class="icon icon-mail"></span>邮箱：1558521716@qq.com</p>
+            <p><span class="icon icon-mail"></span>邮箱：1558521716@qq.com </p>
+            
+
         </div>
         <div id="img1">
         	<img src="img/bai.jpg" />
@@ -349,7 +358,7 @@
                 <li><a href="#edu">教育经历</a></li>
                 <li><a href="#skill">技能掌握</a></li>
                 <li><a href="#lang">语言能力</a></li>
-                <li><a href="#award">获奖状况</a></li>
+                <li><a href="#award">社会经验</a></li>
                 <li><a href="#word">自我评价</a></li>
             </ul>
         </div>
@@ -358,51 +367,48 @@
             <div class="section" id="edu">
                 <h2>教育经历</h2>
                 <div class="content">
-                    <p>这里是内容</p>
-                    <p>条目1</p>
-                    <p>条目2</p>
-                    <p>条目3</p>
-                    <p>条目4</p>
+                	<!--
+                    	&nbsp;空格的转义字符
+                    -->
+                    <p>福州大学阳光学院    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通信工程 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013 - 2017</p>
+                    <p>主修课程：数字电路、模拟电路、电路原理、C语言、通信电子电路原理、单片机原理。</p>
+                    <p>邵武第四中学   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;理科 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013 - 2010</p>
+                   	<p>洪墩中学    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2010 - 2007</p>
+       
                 </div>
             </div>
             <div class="section" id="skill">
                 <h2>技能掌握</h2>
                 <div class="content">
-                    <p>这里是内容</p>
-                    <p>条目1</p>
-                    <p>条目2</p>
-                    <p>条目3</p>
-                    <p>条目4</p>
+                    <p>获得计算机二级证书、驾驶证</p>
+                    <p>学习数字电路，模拟电路，电路原理等的相关课程</p>
+                    <p>了解MySQL数据库的基本原理</p>
+                    <p>会oracle数据库的基本操作</p>
+                    <p>会使用plsql操作数据库</p>
+                    <p>熟悉html、css、jQuery、javas的操作</p>
+                    <p>学习过strus2、hiber、spring框架</p>
                 </div>
             </div>
             <div class="section" id="lang">
                 <h2>语言能力</h2>
                 <div class="content">
-                    <p>这里是内容</p>
-                    <p>条目1</p>
-                    <p>条目2</p>
-                    <p>条目3</p>
-                    <p>条目4</p>
+                    <p>语言能力一般&nbsp;&nbsp;正在不断学习</p>                    
                 </div>
             </div>
             <div class="section" id="award">
-                <h2>获奖状况</h2>
+                <h2>社会经验</h2>
                 <div class="content">
-                    <p>这里是内容</p>
-                    <p>条目1</p>
-                    <p>条目2</p>
-                    <p>条目3</p>
-                    <p>条目4</p>
+                    <p>福建上润精密仪器有限公司 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.11 – 2016.12</p>
+                    <p>负责PCB板的生产。</p>
+                    <p>帮助组装部门组装电子产品销售。 </p>
+                    <p>帮助包装部门对产品进行包装。</p>
                 </div>
             </div>
             <div class="section" id="word">
                 <h2>自我评价</h2>
                 <div class="content">
-                    <p>这里是内容</p>
-                    <p>条目1</p>
-                    <p>条目2</p>
-                    <p>条目3</p>
-                    <p>条目4</p>
+                    <p>本人自学能力良好，能快速的学习与公司相关的技能，融入公司集体，能接受高强度的出差和加班，平时话不多，但能与他人和睦相处。</p>
+                    <p>平时会逛一逛播客园、Stack Overflow、github、csdn。</p>        
                 </div>
             </div>
         </div>
